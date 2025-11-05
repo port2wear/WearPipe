@@ -22,6 +22,14 @@ java {
     }
 }
 
+kotlin {
+    compilerOptions {
+        freeCompilerArgs.addAll(
+            "-Xannotation-default-target=param-property"
+        )
+    }
+}
+
 android {
     compileSdk = 36
     namespace = "org.schabi.newpipe"
